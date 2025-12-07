@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { LuSun, LuMoon } from "react-icons/lu";
+import AsciiText from "./AsciiText";
 
 export function NavBar({ dark, setDark }) {
   const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ export function NavBar({ dark, setDark }) {
 
   const links = [
     { label: "works", to: "/works" },
-    { label: "about", to: "/about" },
+    { label: "music", to: "/music" },
     { label: "contact", to: "/contact" },
     { label: "links", to: "/link" },
   ];
@@ -46,15 +47,15 @@ export function NavBar({ dark, setDark }) {
           to="/"
           className="group flex items-center gap-1 text-[17px] font-light tracking-tight outline-none"
         >
-          <motion.span
+          <motion.div
             initial={{ opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="tracking-wide"
+            className="flex items-center gap-1"
           >
-            cash
-          </motion.span>
-          <span className="text-neutral-400 text-[12px]">/</span>
+            <AsciiText text="cash" className="tracking-wide font-mono" />
+            <span className="text-neutral-400 text-[12px] font-mono">/</span>
+          </motion.div>
         </Link>
 
         {/* DESKTOP NAV */}

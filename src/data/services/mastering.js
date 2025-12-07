@@ -1,0 +1,173 @@
+// mastering.js
+// All client mastering works (title + link only, img left blank)
+
+export const masteringWorks = [
+  {
+    title: "glumroll - mariposa. (2025)",
+    img: "/assets/mastering/glumroll - mariposa. (2025).jpg",
+    link: "https://open.spotify.com/album/5ZGFcmw1SqdcIUr62jVReE",
+    type: "spotify",
+    embedId: "5ZGFcmw1SqdcIUr62jVReE",
+  },
+  {
+    title: "daisy hex, zpectrum - clock in (technopagan remix) (2025)",
+    img: "/assets/mastering/daisy hex, zpectrum - clock in (technopagan remix) (2025).jpg",
+    link: "https://soundcloud.com/nightcore4totalsluts/daisy-hex-zpectrum-clock-in-technopagan-remix-2?in=nightcore4totalsluts/sets/premiere-daisy-hex-hma-remixes",
+    type: "soundcloud",
+  },
+  {
+    title: "glumroll - Blue Moon (2025)",
+    img: "/assets/mastering/glumroll - Blue Moon (2025).jpg",
+    link: "https://open.spotify.com/album/4B0a6xYkTacYzwHFh5SQ6W",
+    type: "spotify",
+    embedId: "4B0a6xYkTacYzwHFh5SQ6W",
+  },
+  {
+    title: "eclipse.xiv - PROPHECY (2025)",
+    img: "/assets/mastering/eclipse.xiv - PROPHECY (2025).png",
+    link: "https://open.spotify.com/album/7KUeM3p2VDfxk6yNWm2fCF",
+    type: "spotify",
+    embedId: "7KUeM3p2VDfxk6yNWm2fCF",
+  },
+  {
+    title: "gingerbee - Apiary (2025)",
+    img: "/assets/mastering/gingerbee - Apiary (2025).jpg",
+    link: "https://gingerbee.bandcamp.com/album/apiary",
+    type: "bandcamp",
+    embedId: "2626863849",
+  },
+  {
+    title: "CRIMSON - self-digestion (2025)",
+    img: "/assets/mastering/CRIMSON - self-digestion (2025).jpg",
+    link: "https://soundcloud.com/wowcrimson/self-digestion",
+    type: "soundcloud",
+  },
+  {
+    title: "glumroll - PINK MATTER (2025)",
+    img: "/assets/mastering/glumroll - PINK MATTER (2025).jpg",
+    link: "https://open.spotify.com/track/2iElWSy4FwGBMU2azfjrsd",
+    type: "spotify",
+    embedId: "2iElWSy4FwGBMU2azfjrsd",
+    isTrack: true,
+  },
+  {
+    title: "glumroll - piscean (2025)",
+    img: "/assets/mastering/glumroll - piscean (2025).jpg",
+    link: "https://open.spotify.com/track/6O9S56Tht1ndAWoTHSSXVz",
+    type: "spotify",
+    embedId: "6O9S56Tht1ndAWoTHSSXVz",
+    isTrack: true,
+  },
+  {
+    title: "miocene memorial garden - JUST FOR NOW (2025)",
+    img: "/assets/mastering/miocene memorial garden - JUST FOR NOW (2025).png",
+    link: "https://soundcloud.com/miocenememorialgarden/just-for-now",
+    type: "soundcloud",
+  },
+  {
+    title: "miocene memorial garden - IF YOU'RE WITH ME (2024)",
+    img: "/assets/mastering/miocene memorial garden - IF YOU'RE WITH ME (2024).png",
+    link: "https://soundcloud.com/miocenememorialgarden/if-youre-with-me",
+    type: "soundcloud",
+  },
+  {
+    title: "cash - heal process (2024)",
+    img: "/assets/mastering/cashheal.jpg",
+    link: "https://soundcloud.com/cash-official/sets/heal-process",
+    type: "soundcloud",
+  },
+  {
+    title: "akaJazy - Cladonia (2024)",
+    img: "/assets/mastering/akaJazy - Cladonia (2024).jpg",
+    link: "https://cyansunrecords.bandcamp.com/album/cladonia",
+    type: "bandcamp",
+    embedId: "571820716",
+  },
+  {
+    title: "avas - data (2024)",
+    img: "/assets/mastering/avas - data (2024).jpg",
+    link: "https://youtube.com/watch?v=O50m45Z2kQI",
+    type: "youtube",
+    embedId: "O50m45Z2kQI",
+  },
+  {
+    title: "cash - heartsongs (2023)",
+    img: "/assets/mastering/cash - heartsongs (2023).jpg",
+    link: "https://isthiscash.bandcamp.com/album/heartsongs",
+    type: "bandcamp",
+    embedId: "3584136008",
+  },
+  {
+    title: "Asian Glow - Ashes (2023)",
+    img: "/assets/mastering/Asian Glow - Ashes (2023).jpg",
+    link: "https://open.spotify.com/album/60icCvlDc6a9YPOrMHaJlo",
+    type: "spotify",
+    embedId: "60icCvlDc6a9YPOrMHaJlo",
+  },
+  {
+    title: "Maahir - Another Time (2024)",
+    img: "/assets/mastering/Maahir - Another Time (2024).jpg",
+    link: "https://maahir.fanlink.tv/anothertime",
+    // No embed for fanlink, keep as link
+  },
+  {
+    title: "Benedict Koh - Spice of Life (2023)",
+    img: "",
+    link: "https://youtube.com/watch?v=0Kxx4cd5-SY",
+    type: "youtube",
+    embedId: "0Kxx4cd5-SY",
+  },
+  {
+    title: "Ray Shen - Love Story (2023)",
+    img: "",
+    link: "https://youtube.com/watch?v=DGq1ct0ylQQ",
+    type: "youtube",
+    embedId: "DGq1ct0ylQQ",
+  },
+  {
+    title: "“√ (roots)” - 水都 (cover) (2024)",
+    img: "",
+    link: "https://youtube.com/watch?v=3K-EMr_OoaM",
+    type: "youtube",
+    embedId: "3K-EMr_OoaM",
+  },
+  {
+    title: "bye, son - rebirth (2023)",
+    img: "/assets/mastering/bye, son - rebirth (2023).jpg",
+    link: "https://soundcloud.com/bye-son/sets/rebirth-ep",
+    type: "soundcloud",
+  },
+  {
+    title: "バブル【〇〇マニア】(cover) (2024)",
+    img: "",
+    link: "https://youtube.com/watch?v=Fq6tn8BmcSc",
+    type: "youtube",
+    embedId: "Fq6tn8BmcSc",
+  },
+  {
+    title: "cash - découragé (reimagined) ft. benedict koh",
+    img: "/assets/mastering/decouragecover.jpg",
+    link: "https://www.youtube.com/watch?v=fTCUPd_Ybkc",
+    type: "youtube",
+    embedId: "fTCUPd_Ybkc",
+  },
+  {
+    title: "bye, son & EJEAN - purpose (2023)",
+    img: "/assets/mastering/bye, son & EJEAN - purpose (2023).jpg",
+    link: "https://youtube.com/watch?v=yki-i-XV8kM",
+    type: "youtube",
+    embedId: "yki-i-XV8kM",
+  },
+  {
+    title: "Snowdonia - Call It What You Want (2022)",
+    img: "/assets/mastering/Snowdonia - Call It What You Want (2022).jpg",
+    link: "https://youtube.com/watch?v=mOmatcwZrzA",
+    type: "youtube",
+    embedId: "mOmatcwZrzA",
+  },
+];
+
+export default {
+  name: "mastering",
+  works: masteringWorks,
+};

@@ -1,80 +1,73 @@
 // src/pages/Contact.jsx
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
-  const ACCENT = "#6C7AA8";
-  const sectionRef = useRef(null);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const io = new IntersectionObserver(
-      ([e]) => e.isIntersecting && setShow(true),
-      { threshold: 0.2 }
-    );
-    if (sectionRef.current) io.observe(sectionRef.current);
-    return () => io.disconnect();
+    const timeout = setTimeout(() => setShow(true), 50);
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <main
-      className="relative px-4 pt-20 pb-24 sm:px-6 font-libre text-neutral-800 dark:text-neutral-200"
-      style={{ ["--accent"]: ACCENT }}
-    >
-      <section
-        ref={sectionRef}
-        className={`relative mx-auto max-w-5xl transition-all duration-700 ${
-          show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
-        }`}
+    <main className="pt-32 pb-24 px-6 min-h-screen bg-white dark:bg-black text-black dark:text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 14 }}
+        animate={show ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="max-w-3xl mx-auto text-center"
       >
-        {/* Image container */}
-        <div className="relative flex items-center justify-center overflow-hidden">
-          <img
-            src="/contactpage/image_sketch2_by_lunaminiss.png"
-            alt="Contact artwork"
-            className="w-full max-h-[70vh] object-contain dark:invert rounded-lg md:translate-x-16 transition-transform duration-700"
-          />
+        {/* Title */}
+        <h1 className="text-5xl md:text-6xl font-light tracking-tight mb-10">
+          contact
+        </h1>
 
-          {/* Text overlay — desktop only (unchanged layout) */}
-          <div className="hidden md:block absolute left-20 top-1/2 -translate-y-1/2 text-left max-w-sm">
-            <h2 className="mb-3 text-4xl font-normal tracking-wide">Contact</h2>
-            <p className="text-[15.5px] leading-relaxed text-neutral-700 dark:text-neutral-200">
-              You can reach me through Discord:{" "}
-              <span className="font-medium">@suji_lament</span>
-              <br />
-              or email:{" "}
-              <a
-                href="mailto:sujilament@gmail.com"
-                className="underline decoration-[var(--accent)] underline-offset-4 hover:text-neutral-900 dark:hover:text-white"
-              >
-                sujilament@gmail.com
-              </a>
-            </p>
-            <p className="mt-6 text-sm italic text-neutral-500 dark:text-neutral-400">
-              “Leave a message.”
-            </p>
-          </div>
-        </div>
+        {/* Contact Info */}
+        <div className="space-y-4 text-lg font-light text-neutral-600 dark:text-neutral-300">
+          <p>
+            ig:{" "}
+            <span className="font-normal text-black dark:text-white">
+              @isthiscash
+            </span>
+          </p>
+          <p>
+            tw:{" "}
+            <span className="font-normal text-black dark:text-white">
+              @isthiscash
+            </span>
+          </p>
+          <p>
+            bsky:{" "}
+            <span className="font-normal text-black dark:text-white">
+              @isthis.cash
+            </span>
+          </p>
 
-        {/* Mobile stack — only shows on small screens */}
-        <div className="md:hidden mt-4 text-left">
-          <h2 className="mb-2 text-3xl font-normal tracking-wide">Contact</h2>
-          <p className="text-[15.5px] leading-relaxed text-neutral-700 dark:text-neutral-200">
-            You can reach me through Discord:{" "}
-            <span className="font-medium">@suji_lament</span>
-            <br />
-            or email:{" "}
+          <p className="pt-2">
+            email:{" "}
             <a
-              href="mailto:sujilament@gmail.com"
-              className="underline decoration-[var(--accent)] underline-offset-4 hover:text-neutral-900 dark:hover:text-white break-all"
+              href="mailto:isthiscash@proton.me"
+              className="underline underline-offset-4 decoration-neutral-400 hover:text-neutral-900 dark:hover:text-white"
             >
-              sujilament@gmail.com
+              isthiscash@proton.me
             </a>
           </p>
-          <p className="mt-4 text-sm italic text-neutral-500 dark:text-neutral-400">
-            “Leave a message.”
+
+          <p>
+            discord:{" "}
+            <span className="font-normal text-black dark:text-white">
+              @isthiscash
+            </span>
           </p>
         </div>
-      </section>
+
+        {/* Footer message */}
+        <p className="mt-10 text-sm italic text-neutral-500 dark:text-neutral-400 max-w-md mx-auto leading-relaxed">
+          please do not hesitate to contact me regarding inquiries for
+          collaborations & commissioned work.
+        </p>
+      </motion.div>
     </main>
   );
 }

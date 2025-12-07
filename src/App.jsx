@@ -5,9 +5,9 @@ import { NavBar } from "./components/NavBar";
 
 import Home from "./pages/Home";
 import Works from "./pages/Works";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Links from "./pages/Links"; // ✅ renamed import
+import Music from "./pages/music";
 
 export default function App() {
   const [dark, setDark] = useState(false);
@@ -30,7 +30,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/works" element={<Works />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/music" element={<Music />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/link" element={<Links />} /> {/* ✅ wired */}
         </Routes>

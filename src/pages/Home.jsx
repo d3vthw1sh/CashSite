@@ -1,9 +1,17 @@
-import { useEffect, useState } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useTransform,
+  useMotionValue,
+  useVelocity,
+  useSpring,
+} from "framer-motion";
 import { Link } from "react-router-dom";
 
 /* -----------------------------------------
-   MouseTrail — still subtle & minimal
+   Mouse Trail Component
 ----------------------------------------- */
 function MouseTrail() {
   const [trail, setTrail] = useState([]);
@@ -13,22 +21,19 @@ function MouseTrail() {
 
   useEffect(() => {
     const handleMove = (e) => {
-      const isInside = e.target.closest(".hero-container");
-      setIsVisible(!!isInside);
-      if (!isInside) return;
-
+      setIsVisible(true);
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
 
       const id = Date.now();
       setTrail((prev) => [
-        ...prev.slice(-10),
+        ...prev.slice(-15),
         { id, x: e.clientX, y: e.clientY },
       ]);
 
       setTimeout(() => {
         setTrail((prev) => prev.filter((p) => p.id !== id));
-      }, 350);
+      }, 500);
     };
 
     window.addEventListener("mousemove", handleMove);
@@ -36,124 +41,258 @@ function MouseTrail() {
   }, [mouseX, mouseY]);
 
   return (
-    <div
-      className={`pointer-events-none fixed inset-0 z-[40] overflow-hidden transition-opacity duration-300 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
       {trail.map((p) => (
         <motion.div
           key={p.id}
-          initial={{ opacity: 0.4, scale: 1 }}
+          initial={{ opacity: 0.5, scale: 1 }}
           animate={{ opacity: 0, scale: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="absolute w-2 h-2 rounded-full bg-white/20 blur-sm"
-          style={{ left: p.x - 4, top: p.y - 4 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="absolute w-1.5 h-1.5 rounded-full bg-white/40 blur-[1px]"
+          style={{ left: p.x, top: p.y }}
         />
       ))}
-
-      <motion.div
-        className="absolute w-40 h-40 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
-        style={{ left: mouseX, top: mouseY }}
-      />
     </div>
   );
 }
 
 /* -----------------------------------------
-   Minimal fade animation
+   Draggable Slider Gallery Component
 ----------------------------------------- */
-const fadeUp = {
-  hidden: { opacity: 0, y: 14 },
-  show: (i = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, delay: 0.15 + i * 0.1, ease: "easeOut" },
-  }),
-};
+function DraggableGallery() {
+  const images = [
+    "studiophoto.jpg",
+    "studiophoto1.jpg",
+    "studiophoto2.jpg",
+    "studiophoto3.JPG",
+    "studiophoto4.jpg",
+    "studiophoto5.jpg",
+  ];
 
-export default function Home() {
+  const x = useMotionValue(0);
+  const containerRef = useRef(null);
+  const [width, setWidth] = useState(0);
+
   useEffect(() => {
-    const onKey = (e) => {
-      if ((e.metaKey || e.ctrlKey) && (e.key === "k" || e.key === "K")) {
-        e.preventDefault();
-        window.dispatchEvent(new CustomEvent("open-link"));
-      }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    if (containerRef.current) {
+      // Calculate drag constraints: total scroll width - visible width
+      setWidth(
+        containerRef.current.scrollWidth - containerRef.current.offsetWidth
+      );
+    }
   }, []);
 
   return (
-    <main className="pt-14 relative w-full min-h-[calc(100vh-56px)] overflow-hidden">
-      {/* Background video under navbar */}
-      <div className="absolute inset-0 top-14 hero-container">
-        <video
-          src="/assets/dove assets/cash_loop_5_nightmode.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover brightness-[0.6]"
-        />
+    <div className="relative w-full bg-black py-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-5xl font-thin tracking-tight text-white/90"
+        >
+          The Studio
+        </motion.h2>
+        <p className="mt-4 text-white/40 text-sm tracking-widest uppercase">
+          Drag to Explore
+        </p>
       </div>
 
-      {/* Soft overlay */}
-      <div className="absolute inset-0 top-14 bg-black/40 pointer-events-none" />
+      <motion.div
+        ref={containerRef}
+        className="cursor-grab active:cursor-grabbing"
+      >
+        <motion.div
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          style={{ x }}
+          className="flex gap-8 px-6 md:px-20 w-max"
+        >
+          {images.map((img, i) => (
+            <GalleryItem key={i} img={img} i={i} />
+          ))}
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}
 
+function GalleryItem({ img, i }) {
+  return (
+    <motion.div
+      className="relative w-[80vw] md:w-[600px] h-[50vh] md:h-[60vh] rounded-2xl overflow-hidden bg-neutral-900 shadow-2xl border border-white/5 group"
+      whileHover={{ scale: 0.98 }}
+      transition={{ duration: 0.4 }}
+    >
+      <img
+        src={`/assets/home/${img}`}
+        alt={`Studio ${i}`}
+        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
+      />
+      <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="text-xs font-mono text-white/90 uppercase tracking-widest">
+          View 0{i + 1}
+        </span>
+      </div>
+    </motion.div>
+  );
+}
+
+/* -----------------------------------------
+   MAIN HOME COMPONENT
+----------------------------------------- */
+export default function Home() {
+  const [isDark, setIsDark] = useState(
+    document.documentElement.classList.contains("dark")
+  );
+
+  useEffect(() => {
+    const htmlEl = document.documentElement;
+    const observer = new MutationObserver(() => {
+      setIsDark(htmlEl.classList.contains("dark"));
+    });
+    observer.observe(htmlEl, { attributes: true });
+    return () => observer.disconnect();
+  }, []);
+
+  // Text Reveal Variants
+  const containerVars = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
+  const letterVars = {
+    hidden: { y: 100, opacity: 0, rotate: 10 },
+    show: {
+      y: 0,
+      opacity: 1,
+      rotate: 0,
+      transition: { type: "spring", stiffness: 100, damping: 10 },
+    },
+  };
+
+  return (
+    <main className="relative w-full min-h-screen bg-black text-white overflow-x-hidden">
       <MouseTrail />
 
-      {/* Center content */}
-      <div className="relative z-[45] flex items-center justify-center w-full h-[calc(100vh-56px)] px-6">
-        <motion.div
-          initial="hidden"
-          animate="show"
-          className="max-w-3xl text-center text-white"
-        >
-          {/* Name */}
+      {/* -------------------------
+           HERO SECTION
+      -------------------------- */}
+      <section className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0">
+          <AnimatePresence mode="wait">
+            <motion.video
+              key={isDark ? "dark-video" : "light-video"}
+              src={
+                isDark
+                  ? "/assets/dove assets/cash_loop_5_nightmode.mp4"
+                  : "/assets/dove assets/cash_loop_6_brightsky.mp4"
+              }
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover opacity-60"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.6 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+            />
+          </AnimatePresence>
+          {/* Gradient Overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/90" />
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 text-center px-6">
           <motion.h1
-            variants={fadeUp}
-            custom={0}
-            className="text-6xl md:text-7xl font-light tracking-tight mb-6"
+            variants={containerVars}
+            initial="hidden"
+            animate="show"
+            className="text-[15vw] leading-none font-light tracking-tighter mix-blend-overlay text-white/90 select-none"
           >
-            cash
+            {"cash".split("").map((char, i) => (
+              <motion.span
+                key={i}
+                variants={letterVars}
+                className="inline-block"
+              >
+                {char}
+              </motion.span>
+            ))}
           </motion.h1>
 
-          {/* Short bio */}
-          <motion.p
-            variants={fadeUp}
-            custom={1}
-            className="text-base md:text-lg text-white/80 font-light leading-relaxed max-w-xl mx-auto"
-          >
-            multi-disciplinary artist, producer, engineer,
-            <br />
-            sound designer, technologist
-            <br />
-            based in new york city
-          </motion.p>
-
-          {/* Buttons */}
           <motion.div
-            variants={fadeUp}
-            custom={2}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.8 }}
+            className="mt-8 space-y-2"
+          >
+            <p className="text-lg md:text-xl font-light tracking-widest uppercase text-white/70">
+              Artist &bull; Producer &bull; Technologist
+            </p>
+            <p className="text-sm text-white/40 tracking-wide">New York City</p>
+          </motion.div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
+          className="absolute bottom-10 z-10 flex flex-col items-center gap-2"
+        >
+          <span className="text-[10px] uppercase tracking-widest text-white/50">
+            Scroll
+          </span>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+            className="w-[1px] h-12 bg-gradient-to-b from-white/0 via-white/50 to-white/0"
+          />
+        </motion.div>
+      </section>
+
+      {/* -------------------------
+           DRAGGABLE GALLERY SECTION
+      -------------------------- */}
+      <DraggableGallery />
+
+      {/* -------------------------
+           FOOTER / CONTACT TEASER
+      -------------------------- */}
+      <section className="relative z-10 py-32 bg-black flex items-center justify-center">
+        <div className="text-center px-6">
+          <motion.p
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1 }}
+            className="text-2xl md:text-4xl font-light text-white/60 max-w-2xl mx-auto leading-relaxed"
+          >
+            "Between noise and silence."
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="mt-12"
           >
             <Link
-              to="/works"
-              className="px-8 py-3 rounded-full bg-white text-black text-sm tracking-wide font-medium hover:scale-105 active:scale-95 transition-all"
+              to="/contact"
+              className="inline-block px-8 py-3 border border-white/20 rounded-full text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
             >
-              View Work
+              Get in Touch
             </Link>
-
-            <a
-              href="#"
-              className="px-8 py-3 rounded-full border border-white/40 text-white text-sm tracking-wide hover:bg-white/10 hover:scale-105 active:scale-95 transition-all"
-            >
-              Contact
-            </a>
           </motion.div>
-        </motion.div>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }
