@@ -60,6 +60,29 @@ export default function Contact() {
               @isthiscash
             </span>
           </p>
+
+          <p className="pt-2">
+            vgen:{" "}
+            <a
+              href="https://vgen.co/isthiscash"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 decoration-neutral-400 hover:text-neutral-900 dark:hover:text-white"
+            >
+              isthiscash
+            </a>
+          </p>
+          <p>
+            patreon:{" "}
+            <a
+              href="https://www.patreon.com/isthiscash"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 decoration-neutral-400 hover:text-neutral-900 dark:hover:text-white"
+            >
+              isthiscash
+            </a>
+          </p>
         </div>
 
         {/* Footer message */}

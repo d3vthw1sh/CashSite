@@ -1,0 +1,125 @@
+{
+  "live": [
+    {
+      "title": "heal process",
+      "artist": "cash",
+      "type": "Live Performance",
+      "location": "BNYC Black Box Theatre, New York",
+      "link": "https://youtu.be/Tbyw_Cw6v98",
+      "description": "Live performance of the album \"heal process\".",
+      "credits": {
+        "visuals": "gethosyne",
+        "show_direction": "Jack Zhu"
+      }
+    },
+    {
+      "title": "BUDAYA 4.0: Cerita Kita | A Tapestry of Malaysian Tales",
+      "type": "Live Concert",
+      "location": "Berklee Performance Center, Boston",
+      "link": "https://youtu.be/be0o1_fxfeI",
+      "description": "Student-run concert at Berklee College of Music showcasing original music composed through a fusion of multiple cultures and historical periods in Malaysian society, influenced by indigenous, immigrant, and colonizing powers.",
+      "roles": [
+        "Technical Director (set design, playback engineering, track production, backing track recording engineer, live visual artist, Max/MSP programming)",
+        "Composer / Arranger / Performer (modular synth, songs 1 & 2)",
+        "Head of Post Production (show mix & master)"
+      ]
+    },
+    {
+      "title": "Budaya 3.0: Generasi Baru",
+      "type": "Live Concert",
+      "location": "Berklee Cafeteria, Boston",
+      "link": "https://youtu.be/_8QgYe5ygho",
+      "description": "Student-run concert at Berklee College of Music performing iconic Malaysian hits of the modern century.",
+      "roles": [
+        "Track Producer (set design, playback engineering, track production)",
+        "Composer / Arranger / Performer (electronics, track 11)",
+        "Head of Post Production (show mix & master)"
+      ]
+    },
+    {
+      "title": "ambient night",
+      "artist": "cash",
+      "type": "Live Performance",
+      "location": "Berklee College of Music, Boston",
+      "link": "https://youtu.be/7-tAcgE3akQ",
+      "description": "Improvisatory ambient performance hosted by the Electronic Production & Design Department at Berklee College of Music."
+    },
+    {
+      "title": "LIVE @ Purgatory",
+      "artist": "cash",
+      "type": "Live Performance",
+      "location": "Purgatory, Brooklyn",
+      "date": "2024-05-18",
+      "link": "https://youtu.be/PxYljtW1fCk",
+      "description": "Improvisatory live set performed at Purgatory, Brooklyn as an opening set for acloudyskye."
+    },
+    {
+      "title": "cash & Alice Cohen",
+      "type": "Live Performance",
+      "event": "New England SynthFest 2024",
+      "location": "Museum of Science, Boston",
+      "link": "https://youtu.be/1NB-3i7fn4Q",
+      "description": "Hybrid livecoding, modular, and improvisatory electroacoustic performance."
+    }
+  ],
+  "multimedia": [
+    {
+      "title": "futurepast",
+      "type": "TeleAbsense Installation",
+      "link": "https://youtu.be/Hh0x66bJwAU",
+      "description": "VR run-through of the installation \"futurepast\" created for the TeleAbsense project.",
+      "credits": {
+        "direction": "Akito Van Troyer",
+        "collaboration": "MIT Media Lab"
+      },
+      "tools": {
+        "music_sound_design": "Ableton Live",
+        "audio_middleware": ["Wwise", "Max/MSP"],
+        "communication": "WebSocket (Max ↔ Unity VR ↔ Wwise)",
+        "visuals": ["Max (Jitter)", "Unity VR"]
+      }
+    },
+    {
+      "title": "oasis",
+      "artist": "cash",
+      "type": "Audiovisual Installation",
+      "link": "https://youtu.be/bKKc1q_SC_4",
+      "description": "Audiovisual installation built with generative audio and visuals inspired by liminal spaces, depicting a virtual ecosystem loosely based on planet Earth.",
+      "credits": {
+        "direction": "Matthew Davidson",
+        "poster_design": "inline six"
+      },
+      "tools": {
+        "programming_composition_implementation": ["Max/MSP", "Ableton Live"],
+        "visual_design_programming": ["Videosync (OpenGL)", "Ableton Live"]
+      },
+      "exhibition": "Berklee College of Music, Boston, MA"
+    },
+    {
+      "title": "generon",
+      "type": "Digital Instrument Prototype",
+      "link": "https://youtu.be/VxHDELbICeY",
+      "description": "Digital instrument developed as part of a larger generative music system, transmitting a continuous stream of MIDI notes influenced by touch sensor input to enhance performability.",
+      "credits": {
+        "direction": "Akito Van Troyer"
+      },
+      "tools": {
+        "development": "Arduino Uno",
+        "performance_environment": "Ableton Live"
+      }
+    },
+    {
+      "title": "afterglow",
+      "artist": "cash",
+      "type": "Audiovisual Project",
+      "link": "https://youtu.be/Xcogq_8M-kA",
+      "description": "AI-generated audiovisual project based on a dataset of 500+ sky images, with visuals that interactively respond to music using RunwayML.",
+      "credits": {
+        "collaboration": "io"
+      },
+      "tools": {
+        "ai_platform": "RunwayML"
+      }
+    }
+  ]
+}

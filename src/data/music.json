@@ -1,0 +1,155 @@
+{
+  "cash": {
+    "description": "cash is a musical project active since 2016, exploring love and ethereality. The project began with ambient, modern classical, and future garage, and later evolved into glitch, microsound, and textural composition.",
+    "releases": [
+      {
+        "title": "heal process",
+        "type": "Album",
+        "release_date": "2024-04-12",
+        "links": {
+          "soundcloud": "https://soundcloud.com/cash-official/sets/heal-process",
+          "youtube": "https://youtu.be/MufzfxqAOwc"
+        },
+        "collaborators": [
+          "Viznode",
+          ".cutspace",
+          "larua",
+          "anem0s",
+          "gethosyne",
+          "jhl",
+          "jian"
+        ],
+        "cover_art": "gethosyne",
+        "live_performance": {
+          "location": "Black Box Theater, New York",
+          "date": "2024-04-27",
+          "video": "https://www.youtube.com/watch?v=Tbyw_Cw6v98"
+        }
+      },
+      {
+        "title": "heartsongs",
+        "type": "EP",
+        "release_date": "2023-02-18",
+        "label": "Reasonable Records",
+        "links": {
+          "soundcloud": "https://soundcloud.com/cash-official/sets/heartsongs-ep",
+          "youtube": "https://youtu.be/KDDkTPKG6S4"
+        },
+        "cover_art": "gethosyne"
+      },
+      {
+        "title": "deluged",
+        "type": "Album",
+        "release_date": "2022-08-30",
+        "links": {
+          "soundcloud": "https://soundcloud.com/cash-official/sets/deluged-lp"
+        },
+        "collaborators": ["EJEAN", "Tondchee", "4lienetic"]
+      },
+      {
+        "title": "where the sky meets the ground",
+        "type": "EP",
+        "release_date": "2021-09-29",
+        "labels": ["MrSuicideSheep", "found/red"],
+        "links": {
+          "soundcloud": "https://soundcloud.com/cash-official/sets/where-the-sky-meets-the-ground"
+        }
+      },
+      {
+        "title": "dreamscapes",
+        "type": "EP",
+        "release_date": "2020-11-23",
+        "label": "MrSuicideSheep",
+        "links": {
+          "soundcloud": "https://soundcloud.com/cash-official/sets/dreamscapes-ep",
+          "youtube": "https://www.youtube.com/watch?v=FDgqg4T5gT8"
+        }
+      },
+      {
+        "title": "Abstract",
+        "type": "Collaborative EP",
+        "release_date": "2019-12-01",
+        "collaborator": "4lienetic",
+        "label": "Blue Lies",
+        "links": {
+          "soundcloud": "https://soundcloud.com/4lienetic/sets/abstract",
+          "youtube": "https://youtu.be/eH_Qgvz6FuM"
+        }
+      },
+      {
+        "title": "collision course",
+        "type": "Album",
+        "release_date": "2019-04-29",
+        "links": {
+          "soundcloud": "https://soundcloud.com/cash-official/collision-course",
+          "youtube": "https://youtu.be/eH_Qgvz6FuM"
+        },
+        "collaborators": [
+          "Liam Thomas",
+          "Blackbird",
+          "Ferven",
+          "Three Oscillators"
+        ]
+      },
+      {
+        "title": "serenity",
+        "type": "EP",
+        "release_date": "2018-01-05",
+        "label": "AmbientMusicalGenre",
+        "links": {
+          "bandcamp": "https://ambientmusicalgenre.bandcamp.com/album/serenity-ep",
+          "youtube": "https://youtu.be/xXFOYFSoSEU"
+        }
+      }
+    ],
+    "singles_and_features": [
+      "https://soundcloud.com/artbyform/voka-cash-jasko-jian",
+      "https://soundcloud.com/artbyform/cash-dove-love-explodes",
+      "https://soundcloud.com/4lienetic/eloigne",
+      "https://soundcloud.com/delay/ode"
+    ]
+  },
+
+  "miocene_memorial_garden": {
+    "description": "Miocene Memorial Garden is an internet-formed musical group exploring maximalist indietronic sounds and themes.",
+    "members": [
+      "cash",
+      "acloudyskye",
+      "Viznode",
+      "SUJI",
+      "EJEAN",
+      "shameless",
+      "JHL",
+      "gethosyne",
+      "envyline"
+    ],
+    "links": [
+      "https://soundcloud.com/miocenememorialgarden/if-youre-with-me",
+      "https://soundcloud.com/miocenememorialgarden/just-for-now"
+    ]
+  },
+
+  "bye_son": {
+    "description": "bye, son is a pop/electronic duo consisting of cash and boba lee.",
+    "members": ["cash", "boba lee"],
+    "tracks": [
+      "https://soundcloud.com/bye-son/bye-son-ejean-purpose",
+      "https://soundcloud.com/bye-son/aliveforyou",
+      "https://soundcloud.com/bye-son/make-you-mine-ft-ejean"
+    ]
+  },
+
+  "radio": {
+    "show_name": "healing vibes",
+    "frequency": "monthly",
+    "host": "cash",
+    "platform": "HKCR",
+    "episodes": [
+      "https://soundcloud.com/hkcrlive/healing-vibes-by-cash-inviting",
+      "https://soundcloud.com/hkcrlive/healing-vibes-w-cash-1202202",
+      "https://soundcloud.com/hkcrlive/healing-vibes-cash-b2b-akajazy-24012025",
+      "https://soundcloud.com/hkcrlive/healing-vibes-w-cash-cma-28122024",
+      "https://soundcloud.com/hkcrlive/healing-vibes-by-cash-04112024"
+    ]
+  }
+}

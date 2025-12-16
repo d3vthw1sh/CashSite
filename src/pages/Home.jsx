@@ -25,7 +25,7 @@ function MouseTrail() {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
 
-      const id = Date.now();
+      const id = `${Date.now()}-${Math.random()}`;
       setTrail((prev) => [
         ...prev.slice(-15),
         { id, x: e.clientX, y: e.clientY },
@@ -188,21 +188,13 @@ export default function Home() {
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
           <AnimatePresence mode="wait">
-            <motion.video
-              key={isDark ? "dark-video" : "light-video"}
-              src={
-                isDark
-                  ? "/assets/dove assets/cash_loop_5_nightmode.mp4"
-                  : "/assets/dove assets/cash_loop_6_brightsky.mp4"
-              }
-              autoPlay
-              loop
-              muted
-              playsInline
+            <motion.img
+              key="hero-image"
+              src="/assets/assets/cash image.jpg"
+              alt="Hero Background"
               className="w-full h-full object-cover opacity-60"
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.6 }}
-              exit={{ opacity: 0 }}
               transition={{ duration: 1.5 }}
             />
           </AnimatePresence>
@@ -259,6 +251,8 @@ export default function Home() {
           />
         </motion.div>
       </section>
+
+
 
       {/* -------------------------
            DRAGGABLE GALLERY SECTION

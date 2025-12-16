@@ -1,0 +1,96 @@
+{
+  "releases": [
+    {
+      "title": "soundwalk",
+      "artist": "cash",
+      "type": "Sample Pack",
+      "store_link": "https://thisiscash.gumroad.com/l/dpogj",
+      "video_link": "https://youtu.be/iIUSCQzOLM4",
+      "description": "A cloud of metallic components blasted by a harsh wind, revealing moments of quiet, cascading beauty.",
+      "collaboration": {
+        "label": "am spritzer",
+        "label_link": "https://amspritzer.bandcamp.com/"
+      },
+      "artwork": [
+        {
+          "artist": "gethosyne",
+          "link": "https://x.com/gethosyne"
+        },
+        {
+          "artist": "4kFairyFantasy",
+          "link": "https://www.instagram.com/4kfairyfantasy/"
+        }
+      ],
+      "demo_artists": [
+        {
+          "name": "Viznode",
+          "link": "https://soundcloud.com/viznode"
+        },
+        {
+          "name": "zy",
+          "link": "https://soundcloud.com/project_zy"
+        },
+        {
+          "name": "Ezra Laeux",
+          "link": "https://soundcloud.com/ezralaeux"
+        },
+        {
+          "name": "JHL",
+          "link": "https://soundcloud.com/jhlofficixl"
+        }
+      ]
+    },
+    {
+      "title": "soundwalk 2: textural exploration",
+      "artist": "cash",
+      "type": "Sample Pack",
+      "store_link": "https://thisiscash.gumroad.com/l/soundwalk2",
+      "video_link": "https://youtu.be/Ueb-hhworXQ",
+      "description": "A sample pack designed as source material and inspiration for a wide range of musical compositions.",
+      "content": {
+        "samples_count": 295,
+        "sound_design_sessions": 5,
+        "contributors": [
+          "cash",
+          "boxkitty"
+        ]
+      },
+      "artwork": [
+        {
+          "artist": "ćma",
+          "link": "https://x.com/goji_zzz"
+        }
+      ],
+      "demo_artists": [
+        {
+          "name": "larua",
+          "link": "https://soundcloud.com/larua00"
+        },
+        {
+          "name": "lucra400",
+          "link": "https://soundcloud.com/lucra400"
+        },
+        {
+          "name": "nerve tower",
+          "link": "https://soundcloud.com/nervetower"
+        },
+        {
+          "name": "anem0s",
+          "link": "https://soundcloud.com/anem0s"
+        },
+        {
+          "name": "BLUE NOISE",
+          "link": "https://soundcloud.com/bluenoise2"
+        },
+        {
+          "name": "Viznode",
+          "link": "https://soundcloud.com/viznode"
+        }
+      ]
+    }
+  ],
+  "support": {
+    "platform": "Patreon",
+    "link": "https://www.patreon.com/isthiscash"
+  }
+}

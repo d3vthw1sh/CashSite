@@ -24,9 +24,10 @@ export function NavBar({ dark, setDark }) {
 
   const links = [
     { label: "works", to: "/works" },
+    { label: "performance", to: "/performance" },
+    { label: "store", to: "/store" },
     { label: "music", to: "/music" },
     { label: "contact", to: "/contact" },
-    { label: "links", to: "/link" },
   ];
 
   /* -------------------------------------------------------
@@ -35,8 +36,8 @@ export function NavBar({ dark, setDark }) {
   return (
     <header
       className={[
-        "fixed inset-x-0 top-0 z-[9999] border-b transition-all duration-300",
-        "h-14 bg-white/70 dark:bg-black/70 backdrop-blur-xl",
+        "fixed inset-x-0 top-0 z-[99999] border-b transition-all duration-300",
+        "h-14 bg-white/90 dark:bg-black/90 backdrop-blur-xl",
         open ? "border-transparent" : "border-black/5 dark:border-white/5",
       ].join(" ")}
     >
