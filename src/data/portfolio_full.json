@@ -205,9 +205,10 @@
     "img": "/assets/CoverJacket/Benedict Koh - Spice of Life (2024).jpg"
   },
   {
-    "title": "Love Story",
+    "title": "Love Story ft Aly Han",
     "artist": "Ray Shen",
     "tags": [
+      "production",
       "mixing",
       "mastering"
     ],
@@ -246,6 +247,7 @@
     "title": "バブル【〇〇マニア】",
     "artist": "Unknown",
     "tags": [
+      "mixing",
       "mastering"
     ],
     "link": "https://youtube.com/watch?v=Fq6tn8BmcSc",
@@ -335,5 +337,149 @@
       "Terra di Tutti Film Festival — Winner",
       "Al Ard Doc Film Festival — Winner"
     ]
+  },
+  {
+    "title": "High Positive",
+    "artist": "Pilgrim Raid",
+    "tags": [
+      "production"
+    ],
+    "link": "https://youtube.com/watch?v=x_pbxBoX1bU",
+    "type": "youtube",
+    "embedId": "x_pbxBoX1bU",
+    "img": null
+  },
+  {
+    "title": "Night Shines Words of U",
+    "artist": "Asian Glow",
+    "tags": [
+      "production"
+    ],
+    "link": "https://dbeatdropdeadpowerhead.bandcamp.com/track/night-shines-words-of-u",
+    "type": "bandcamp",
+    "embedId": null,
+    "img": null
+  },
+  {
+    "title": "stratosphere",
+    "artist": "cash",
+    "tags": [
+      "production"
+    ],
+    "link": "https://soundcloud.com/cash-official/stratosphere",
+    "type": "soundcloud",
+    "embedId": null,
+    "img": null
+  },
+  {
+    "title": "i forgot your name",
+    "artist": "Rippedd",
+    "tags": [
+      "production"
+    ],
+    "link": "https://youtube.com/watch?v=8UmYuP4lk5I",
+    "type": "youtube",
+    "embedId": "8UmYuP4lk5I",
+    "img": null
+  },
+  {
+    "title": "Car Sick",
+    "artist": "Benedict Koh",
+    "tags": [
+      "production",
+      "mixing"
+    ],
+    "link": "https://open.spotify.com/album/7f8f81dbmitFMj1ABiH4vl?si=RPX8upzGRYyD2W4MDkfLlg",
+    "type": "spotify",
+    "embedId": "7f8f81dbmitFMj1ABiH4vl",
+    "img": null
+  },
+  {
+    "title": "submerged ft EJEAN",
+    "artist": "cash",
+    "tags": [
+      "production"
+    ],
+    "link": "https://soundcloud.com/cash-official/submerged-ft-ejean-bryan?in=cash-official/sets/deluged-lp/",
+    "type": "soundcloud",
+    "embedId": null,
+    "img": null
+  },
+  {
+    "title": "broken record",
+    "artist": "cash, STACE, Bryan Lu",
+    "tags": [
+      "production"
+    ],
+    "link": "https://open.spotify.com/album/30McfaQUd8NntZ5r4EsGvx?si=68uNWbNWT7mAYoDknV3mKA",
+    "type": "spotify",
+    "embedId": "30McfaQUd8NntZ5r4EsGvx",
+    "img": null
+  },
+  {
+    "title": "Rose",
+    "artist": "cash, Jasko, jian, snowstorm & voka",
+    "tags": [
+      "production"
+    ],
+    "link": "https://soundcloud.com/artbyform/voka-cash-jasko-jian?in=cash-official/sets/rose-from-storybook-volume-2",
+    "type": "soundcloud",
+    "embedId": null,
+    "img": null
+  },
+  {
+    "title": "one time girl",
+    "artist": "soorinkimchi",
+    "tags": [
+      "mixing"
+    ],
+    "link": "https://www.youtube.com/watch?v=sQPRbh_EoqY&list=RDsQPRbh_EoqY&start_radio=1",
+    "type": "youtube",
+    "embedId": "sQPRbh_EoqY",
+    "img": null
+  },
+  {
+    "title": "Beauty and the Beast",
+    "artist": "Jonas Cho",
+    "tags": [
+      "mixing"
+    ],
+    "link": "https://www.youtube.com/watch?v=eQYgRnKE1m4&list=RDeQYgRnKE1m4&start_radio=1",
+    "type": "youtube",
+    "embedId": "eQYgRnKE1m4",
+    "img": null
+  },
+  {
+    "title": "Inukshuk",
+    "artist": "Benedict Koh",
+    "tags": [
+      "mixing"
+    ],
+    "link": "https://www.youtube.com/watch?v=SkeLbpP0jNU&list=RDSkeLbpP0jNU&start_radio=1",
+    "type": "youtube",
+    "embedId": "SkeLbpP0jNU",
+    "img": null
+  },
+  {
+    "title": "Eigengrau",
+    "artist": "Benedict Koh",
+    "tags": [
+      "mixing"
+    ],
+    "link": "https://www.youtube.com/watch?v=6tTblyikGnQ&list=RD6tTblyikGnQ&start_radio=1",
+    "type": "youtube",
+    "embedId": "6tTblyikGnQ",
+    "img": null
+  },
+  {
+    "title": "Bolivia",
+    "artist": "Ryota Sasaki",
+    "tags": [
+      "mixing"
+    ],
+    "link": "https://www.youtube.com/watch?v=pHjkW9ATYK8",
+    "type": "youtube",
+    "embedId": "pHjkW9ATYK8",
+    "img": null
   }
 ]
