@@ -1,12 +1,17 @@
 [
   {
+    "title": "Ladies First",
+    "artist": "The Lunch Ladies",
+    "tags": ["recording"],
+    "link": "https://open.spotify.com/album/3wVh61MyBo4U60UQSlfasI",
+    "type": "spotify",
+    "embedId": "3wVh61MyBo4U60UQSlfasI",
+    "img": "/assets/CoverJacket/The Lunch Ladies - Ladies First.png"
+  },
+  {
     "title": "Everything",
     "artist": "Annie Elise",
-    "tags": [
-      "sound design",
-      "production",
-      "co-production"
-    ],
+    "tags": ["sound design", "production", "co-production"],
     "link": "https://open.spotify.com/album/267ACiPXqHuCPL0e1VqiqO",
     "type": "spotify",
     "embedId": "267ACiPXqHuCPL0e1VqiqO",
@@ -15,9 +20,7 @@
   {
     "title": "mariposa.",
     "artist": "glumroll",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://open.spotify.com/album/5ZGFcmw1SqdcIUr62jVReE",
     "type": "spotify",
     "embedId": "5ZGFcmw1SqdcIUr62jVReE",
@@ -26,9 +29,7 @@
   {
     "title": "clock in (technopagan remix)",
     "artist": "daisy hex, zpectrum",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://soundcloud.com/nightcore4totalsluts/daisy-hex-zpectrum-clock-in-technopagan-remix-2?in=nightcore4totalsluts/sets/premiere-daisy-hex-hma-remixes",
     "type": "soundcloud",
     "embedId": null,
@@ -37,9 +38,7 @@
   {
     "title": "Blue Moon",
     "artist": "glumroll",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://open.spotify.com/album/4B0a6xYkTacYzwHFh5SQ6W",
     "type": "spotify",
     "embedId": "4B0a6xYkTacYzwHFh5SQ6W",
@@ -48,9 +47,7 @@
   {
     "title": "PROPHECY",
     "artist": "eclipse.xiv",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://open.spotify.com/album/7KUeM3p2VDfxk6yNWm2fCF",
     "type": "spotify",
     "embedId": "7KUeM3p2VDfxk6yNWm2fCF",
@@ -59,9 +56,7 @@
   {
     "title": "Rosemary",
     "artist": "Porcelain Hearts",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://open.spotify.com/album/06kkKhg5kSJEw416kwrq2C",
     "type": "spotify",
     "embedId": "06kkKhg5kSJEw416kwrq2C",
@@ -70,9 +65,7 @@
   {
     "title": "Apiary",
     "artist": "gingerbee",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://gingerbee.bandcamp.com/album/apiary",
     "type": "bandcamp",
     "embedId": "2626863849",
@@ -81,9 +74,7 @@
   {
     "title": "self-digestion",
     "artist": "CRIMSON",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://soundcloud.com/wowcrimson/self-digestion",
     "type": "soundcloud",
     "embedId": null,
@@ -92,9 +83,7 @@
   {
     "title": "PINK MATTER",
     "artist": "glumroll",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://open.spotify.com/track/2iElWSy4FwGBMU2azfjrsd",
     "type": "spotify",
     "embedId": "2iElWSy4FwGBMU2azfjrsd",
@@ -103,9 +92,7 @@
   {
     "title": "piscean",
     "artist": "glumroll",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://open.spotify.com/track/6O9S56Tht1ndAWoTHSSXVz",
     "type": "spotify",
     "embedId": "6O9S56Tht1ndAWoTHSSXVz",
@@ -144,12 +131,7 @@
   {
     "title": "heal process",
     "artist": "cash",
-    "tags": [
-      "recording",
-      "mixing",
-      "mastering",
-      "production"
-    ],
+    "tags": ["recording", "mixing", "mastering", "production"],
     "link": "https://soundcloud.com/cash-official/sets/heal-process",
     "type": "soundcloud",
     "embedId": null,
@@ -158,10 +140,7 @@
   {
     "title": "Cladonia",
     "artist": "akaJazy",
-    "tags": [
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["mixing", "mastering"],
     "link": "https://cyansunrecords.bandcamp.com/album/cladonia",
     "type": "bandcamp",
     "embedId": "571820716",
@@ -170,10 +149,7 @@
   {
     "title": "data",
     "artist": "avas",
-    "tags": [
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["mixing", "mastering"],
     "link": "https://youtube.com/watch?v=O50m45Z2kQI",
     "type": "youtube",
     "embedId": "O50m45Z2kQI",
@@ -182,9 +158,7 @@
   {
     "title": "heartsongs",
     "artist": "cash",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://isthiscash.bandcamp.com/album/heartsongs",
     "type": "bandcamp",
     "embedId": "3584136008",
@@ -193,12 +167,7 @@
   {
     "title": "Ashes",
     "artist": "Asian Glow",
-    "tags": [
-      "sound design",
-      "co-production",
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["sound design", "co-production", "mixing", "mastering"],
     "link": "https://open.spotify.com/album/60icCvlDc6a9YPOrMHaJlo",
     "type": "spotify",
     "embedId": "60icCvlDc6a9YPOrMHaJlo",
@@ -207,9 +176,7 @@
   {
     "title": "Another Time",
     "artist": "Maahir",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://maahir.fanlink.tv/anothertime",
     "type": null,
     "embedId": null,
@@ -218,11 +185,7 @@
   {
     "title": "Spice of Life",
     "artist": "Benedict Koh",
-    "tags": [
-      "recording",
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["recording", "mixing", "mastering"],
     "link": "https://youtube.com/watch?v=0Kxx4cd5-SY",
     "type": "youtube",
     "embedId": "0Kxx4cd5-SY",
@@ -231,11 +194,7 @@
   {
     "title": "Love Story ft Aly Han",
     "artist": "Ray Shen",
-    "tags": [
-      "production",
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["production", "mixing", "mastering"],
     "link": "https://youtube.com/watch?v=DGq1ct0ylQQ",
     "type": "youtube",
     "embedId": "DGq1ct0ylQQ",
@@ -244,9 +203,7 @@
   {
     "title": "√ (roots)",
     "artist": "水都",
-    "tags": [
-      "mastering"
-    ],
+    "tags": ["mastering"],
     "link": "https://youtube.com/watch?v=3K-EMr_OoaM",
     "type": "youtube",
     "embedId": "3K-EMr_OoaM",
@@ -270,10 +227,7 @@
   {
     "title": "バブル【〇〇マニア】",
     "artist": "Unknown",
-    "tags": [
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["mixing", "mastering"],
     "link": "https://youtube.com/watch?v=Fq6tn8BmcSc",
     "type": "youtube",
     "embedId": "Fq6tn8BmcSc",
@@ -282,11 +236,7 @@
   {
     "title": "découragé (reimagined)",
     "artist": "cash ft. benedict koh",
-    "tags": [
-      "mixing",
-      "mastering",
-      "recording"
-    ],
+    "tags": ["mixing", "mastering", "recording"],
     "link": "https://www.youtube.com/watch?v=fTCUPd_Ybkc",
     "type": "youtube",
     "embedId": "fTCUPd_Ybkc",
@@ -310,10 +260,7 @@
   {
     "title": "Call It What You Want",
     "artist": "Snowdonia",
-    "tags": [
-      "mixing",
-      "mastering"
-    ],
+    "tags": ["mixing", "mastering"],
     "link": "https://youtube.com/watch?v=mOmatcwZrzA",
     "type": "youtube",
     "embedId": "mOmatcwZrzA",
@@ -336,11 +283,7 @@
   {
     "title": "elysium (rewrite)",
     "artist": "cash",
-    "tags": [
-      "immersive mixing",
-      "Dolby Atmos",
-      "Apple Spatial Audio"
-    ],
+    "tags": ["immersive mixing", "Dolby Atmos", "Apple Spatial Audio"],
     "link": "https://fanlink.tv/elysiumRW",
     "type": null,
     "embedId": null,
@@ -349,10 +292,7 @@
   {
     "title": "Walled Citizen",
     "artist": "Sameer Qumsiyeh",
-    "tags": [
-      "sound for picture",
-      "scoring"
-    ],
+    "tags": ["sound for picture", "scoring"],
     "link": "https://youtu.be/wUp8uJ5LaGY",
     "type": "youtube",
     "embedId": "wUp8uJ5LaGY",
@@ -367,9 +307,7 @@
   {
     "title": "High Positive",
     "artist": "Pilgrim Raid",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://youtube.com/watch?v=x_pbxBoX1bU",
     "type": "youtube",
     "embedId": "x_pbxBoX1bU",
@@ -378,9 +316,7 @@
   {
     "title": "Night Shines Words of U",
     "artist": "Asian Glow",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://dbeatdropdeadpowerhead.bandcamp.com/track/night-shines-words-of-u",
     "type": "bandcamp",
     "embedId": null,
@@ -389,9 +325,7 @@
   {
     "title": "stratosphere",
     "artist": "cash",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://soundcloud.com/cash-official/stratosphere",
     "type": "soundcloud",
     "embedId": null,
@@ -400,9 +334,7 @@
   {
     "title": "i forgot your name",
     "artist": "Rippedd",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://youtube.com/watch?v=8UmYuP4lk5I",
     "type": "youtube",
     "embedId": "8UmYuP4lk5I",
@@ -411,11 +343,7 @@
   {
     "title": "Car Sick",
     "artist": "Benedict Koh",
-    "tags": [
-      "production",
-      "mixing",
-      "recording"
-    ],
+    "tags": ["production", "mixing", "recording"],
     "link": "https://open.spotify.com/album/7f8f81dbmitFMj1ABiH4vl?si=RPX8upzGRYyD2W4MDkfLlg",
     "type": "spotify",
     "embedId": "7f8f81dbmitFMj1ABiH4vl",
@@ -424,9 +352,7 @@
   {
     "title": "submerged ft EJEAN",
     "artist": "cash",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://soundcloud.com/cash-official/submerged-ft-ejean-bryan?in=cash-official/sets/deluged-lp/",
     "type": "soundcloud",
     "embedId": null,
@@ -435,9 +361,7 @@
   {
     "title": "broken record",
     "artist": "cash, STACE, Bryan Lu",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://open.spotify.com/album/30McfaQUd8NntZ5r4EsGvx?si=68uNWbNWT7mAYoDknV3mKA",
     "type": "spotify",
     "embedId": "30McfaQUd8NntZ5r4EsGvx",
@@ -446,9 +370,7 @@
   {
     "title": "Rose",
     "artist": "cash, Jasko, jian, snowstorm & voka",
-    "tags": [
-      "production"
-    ],
+    "tags": ["production"],
     "link": "https://soundcloud.com/artbyform/voka-cash-jasko-jian?in=cash-official/sets/rose-from-storybook-volume-2",
     "type": "soundcloud",
     "embedId": null,
@@ -457,9 +379,7 @@
   {
     "title": "one time girl",
     "artist": "soorinkimchi",
-    "tags": [
-      "mixing"
-    ],
+    "tags": ["mixing"],
     "link": "https://www.youtube.com/watch?v=sQPRbh_EoqY&list=RDsQPRbh_EoqY&start_radio=1",
     "type": "youtube",
     "embedId": "sQPRbh_EoqY",
@@ -468,10 +388,7 @@
   {
     "title": "Beauty and the Beast",
     "artist": "Jonas Cho",
-    "tags": [
-      "mixing",
-      "recording"
-    ],
+    "tags": ["mixing", "recording"],
     "link": "https://www.youtube.com/watch?v=eQYgRnKE1m4&list=RDeQYgRnKE1m4&start_radio=1",
     "type": "youtube",
     "embedId": "eQYgRnKE1m4",
@@ -480,10 +397,7 @@
   {
     "title": "Inukshuk",
     "artist": "Benedict Koh",
-    "tags": [
-      "mixing",
-      "recording"
-    ],
+    "tags": ["mixing", "recording"],
     "link": "https://www.youtube.com/watch?v=SkeLbpP0jNU&list=RDSkeLbpP0jNU&start_radio=1",
     "type": "youtube",
     "embedId": "SkeLbpP0jNU",
@@ -492,10 +406,7 @@
   {
     "title": "Eigengrau",
     "artist": "Benedict Koh",
-    "tags": [
-      "mixing",
-      "recording"
-    ],
+    "tags": ["mixing", "recording"],
     "link": "https://www.youtube.com/watch?v=6tTblyikGnQ&list=RD6tTblyikGnQ&start_radio=1",
     "type": "youtube",
     "embedId": "6tTblyikGnQ",
@@ -504,10 +415,7 @@
   {
     "title": "Bolivia",
     "artist": "Ryota Sasaki",
-    "tags": [
-      "mixing",
-      "recording"
-    ],
+    "tags": ["mixing", "recording"],
     "link": "https://www.youtube.com/watch?v=pHjkW9ATYK8",
     "type": "youtube",
     "embedId": "pHjkW9ATYK8",
@@ -516,9 +424,7 @@
   {
     "title": "Loose Change",
     "artist": "The Lunch Ladies",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://open.spotify.com/track/7FtMh1eV8h8H2YvURQcsqZ?si=c83a7739ad094b18",
     "type": "spotify",
     "embedId": "7FtMh1eV8h8H2YvURQcsqZ",
@@ -527,9 +433,7 @@
   {
     "title": "Over It",
     "artist": "CARSONS",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://open.spotify.com/album/450PLXgC44f8tybpN810Ib?si=1nVd89JzSH-pNfwscvxPJQ",
     "type": "spotify",
     "embedId": "450PLXgC44f8tybpN810Ib",
@@ -538,9 +442,7 @@
   {
     "title": "Love Stays (Love Like You & Everything Stays Mashup)",
     "artist": "Love Stays",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://www.youtube.com/watch?v=QeQMOCyDpjs",
     "type": "youtube",
     "embedId": "QeQMOCyDpjs",
@@ -549,9 +451,7 @@
   {
     "title": "Jelly & Cheese Sandwich",
     "artist": "The Lunch Ladies",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://youtube.com/watch?v=0_VjL2NJBgg",
     "type": "youtube",
     "embedId": "0_VjL2NJBgg",
@@ -560,9 +460,7 @@
   {
     "title": "Sonnet 71",
     "artist": "Benedict Koh",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://www.youtube.com/watch?v=PQSjUz4cblA&list=RDPQSjUz4cblA&start_radio=1",
     "type": "youtube",
     "embedId": "PQSjUz4cblA",
@@ -571,9 +469,7 @@
   {
     "title": "elysium",
     "artist": "cash",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://www.youtube.com/watch?v=_Gy8CX2oDA8&list=RD_Gy8CX2oDA8&start_radio=1",
     "type": "youtube",
     "embedId": "_Gy8CX2oDA8",
@@ -582,9 +478,7 @@
   {
     "title": "Nose Picker",
     "artist": "The Lunch Ladies",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://www.youtube.com/watch?v=BErcsZphpCs",
     "type": "youtube",
     "embedId": "BErcsZphpCs",
@@ -593,9 +487,7 @@
   {
     "title": "Come & Go",
     "artist": "Ava Panza",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://open.spotify.com/album/7naM2I3muVeJ1oWw5hzitt?si=284e0a05dbcd4b65",
     "type": "spotify",
     "embedId": "7naM2I3muVeJ1oWw5hzitt",
@@ -604,9 +496,7 @@
   {
     "title": "Would You Be So Kind",
     "artist": "Francesca Castro",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://open.spotify.com/album/32TM0vWP7f20ghcfA1OVOh?si=ILjzrHdcQK6HNzqrvhTzAg",
     "type": "spotify",
     "embedId": "32TM0vWP7f20ghcfA1OVOh",
@@ -615,9 +505,7 @@
   {
     "title": "Good Friday",
     "artist": "Benedict Koh",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://open.spotify.com/track/61bhyfBi4sZMN7viULXwIc?si=d9788aa5d55d448c",
     "type": "spotify",
     "embedId": "61bhyfBi4sZMN7viULXwIc",
@@ -626,9 +514,7 @@
   {
     "title": "Kembangan Jam",
     "artist": "Benedict Koh",
-    "tags": [
-      "recording"
-    ],
+    "tags": ["recording"],
     "link": "https://open.spotify.com/album/29FJwDTFDXdmrP7bZo78F8?si=WOu1iF7pTZqpRlC0Sd9m2Q",
     "type": "spotify",
     "embedId": "29FJwDTFDXdmrP7bZo78F8",
