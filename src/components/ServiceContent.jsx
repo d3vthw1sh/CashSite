@@ -5,6 +5,7 @@ export default function ServiceContent({ service }) {
       <div className="flex flex-col md:flex-row gap-6">
         <img
           src={service.artwork}
+          loading="lazy"
           className="w-40 h-40 md:w-56 md:h-56 rounded-lg object-cover bg-neutral-900"
           alt={service.name}
         />
@@ -30,7 +31,7 @@ export default function ServiceContent({ service }) {
               scrolling="no"
               frameBorder="no"
               src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(
-                embed.url
+                embed.url,
               )}`}
             />
           )}

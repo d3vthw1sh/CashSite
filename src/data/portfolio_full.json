@@ -1,5 +1,32 @@
 [
   {
+    "title": "real2feel",
+    "artist": "glumroll",
+    "tags": ["production", "mixing", "mastering"],
+    "link": "https://open.spotify.com/album/6m2BGHveItWtiRTVZ6Jfi6?si=tEQGsVxZQhWod_5Ztqt0Eg",
+    "type": "spotify",
+    "embedId": "6m2BGHveItWtiRTVZ6Jfi6",
+    "img": "/assets/CoverJacket/glumroll - real2feel.jpg"
+  },
+  {
+    "title": "Start",
+    "artist": "MIO-ERA",
+    "tags": ["recording", "mixing", "mastering"],
+    "link": "https://mio-era.bandcamp.com/album/start",
+    "type": "bandcamp",
+    "embedId": null,
+    "img": "/assets/CoverJacket/MIO-ERA - Start.png"
+  },
+  {
+    "title": "Meant Love",
+    "artist": "EJEAN",
+    "tags": ["production"],
+    "link": "https://open.spotify.com/track/7qyodVgiF3KRm7AKXQaihe?si=NwuUpjj8Q2aJSQ_7GanNqQ",
+    "type": "spotify",
+    "embedId": "7qyodVgiF3KRm7AKXQaihe",
+    "img": "/assets/CoverJacket/EJEAN - Meant Love.jpg"
+  },
+  {
     "title": "Ladies First",
     "artist": "The Lunch Ladies",
     "tags": ["recording"],

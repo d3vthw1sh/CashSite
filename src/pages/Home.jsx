@@ -77,7 +77,7 @@ function DraggableGallery() {
     if (containerRef.current) {
       // Calculate drag constraints: total scroll width - visible width
       setWidth(
-        containerRef.current.scrollWidth - containerRef.current.offsetWidth
+        containerRef.current.scrollWidth - containerRef.current.offsetWidth,
       );
     }
   }, []);
@@ -127,6 +127,7 @@ function GalleryItem({ img, i }) {
       <img
         src={`/assets/home/${img}`}
         alt={`Studio ${i}`}
+        loading="lazy"
         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
       />
       <div className="absolute bottom-6 left-6 bg-black/60 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -143,7 +144,7 @@ function GalleryItem({ img, i }) {
 ----------------------------------------- */
 export default function Home() {
   const [isDark, setIsDark] = useState(
-    document.documentElement.classList.contains("dark")
+    document.documentElement.classList.contains("dark"),
   );
 
   useEffect(() => {
@@ -251,8 +252,6 @@ export default function Home() {
           />
         </motion.div>
       </section>
-
-
 
       {/* -------------------------
            DRAGGABLE GALLERY SECTION
