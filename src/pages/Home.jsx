@@ -61,12 +61,12 @@ function MouseTrail() {
 ----------------------------------------- */
 function DraggableGallery() {
   const images = [
-    "studiophoto.jpg",
-    "studiophoto1.jpg",
-    "studiophoto2.jpg",
-    "studiophoto3.JPG",
-    "studiophoto4.jpg",
-    "studiophoto5.jpg",
+    "studiophoto.webp",
+    "studiophoto1.webp",
+    "studiophoto2.webp",
+    "studiophoto3.webp",
+    "studiophoto4.webp",
+    "studiophoto5.webp",
   ];
 
   const x = useMotionValue(0);

@@ -31,6 +31,17 @@ function ProjectDetails({ project }) {
         </div>
       )}
 
+      {project.link && !getYoutubeId(project.link) && (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex text-xs font-mono uppercase tracking-widest underline underline-offset-4 text-neutral-500 hover:text-black dark:hover:text-white transition-colors"
+        >
+          Open performance link
+        </a>
+      )}
+
       {/* Info Header */}
       <div className="space-y-2">
         <h2 className="text-2xl md:text-4xl font-light tracking-tight">
